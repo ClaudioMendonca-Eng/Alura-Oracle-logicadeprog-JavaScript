@@ -7,7 +7,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 
 - [Instrutores](#instrutor)
 - [Preparando o ambiente](#preparandooambiente)
-- [Contribuindo](#contribuindo)
+- [Arquivo base para o curso](#arquivobaseparacurso)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -25,3 +25,13 @@ Nesta parte do curso, meu objetivo foi preparar o ambiente de desenvolvimento qu
 Comecei indicando a importância de baixar o projeto base, cujo link está disponível no material do curso. Saber lidar com códigos de outras pessoas é crucial para qualquer desenvolvedor, especialmente em ambientes profissionais. Muitas vezes, colaboramos em partes de código que não escrevemos. Compreender a lógica, estrutura e funcionamento desses códigos é vital para realizar alterações, corrigir bugs e adicionar novos recursos de maneira eficaz.
 
 Quanto à escrita e edição de códigos, escolhi o Visual Studio Code, como sugerido pelo curso. Essa ferramenta será essencial para o nosso trabalho ao longo do curso. Estou animado para começar e explorar juntos esse ambiente de desenvolvimento!
+
+## <a name="arquivobaseparacurso"> Arquivo base para o curso </a>
+
+Nesta parte do curso, meu objetivo foi apresentar o arquivo base que vamos utilizar nas próximas aulas. Quero garantir uma experiência de aprendizado eficiente, então compartilhei os passos necessários.
+
+- <code> img,</code> vamos usá-lo para editar as imagens do projeto;
+- <code>app.js,</code> que ainda não tem nenhuma linha de código;
+- <code>index.html,</code> referente a parte visual que vamos explorar em breve;
+- <code>style.css,</code> os estilos.
+
