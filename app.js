@@ -7,5 +7,9 @@ let chute = parseInt(prompt('Digite um número entre 0 e 10'));
 if (chute == numeroSecreto) {
     alert(`Isso ai! Você descobriu o número secreto ${numeroSecreto}`);
 } else {
-    alert('Que pena, você errou!');
+    if (chute > numeroSecreto) {
+        alert(`O número secreto é menor que ${chute}`);
+    } else {
+        alert(`O número secreto é maior que ${chute}`);
+    }
 }

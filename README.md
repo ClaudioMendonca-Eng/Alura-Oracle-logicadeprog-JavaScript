@@ -15,6 +15,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Else e comentários](#elseecomentarios)
 - [Concatenação](#concatenacao)
 - [Live server](#liveserver)
+- [Novas condições](#novascondicoes)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -122,6 +123,17 @@ Após instalar o Live Server, abrimos o arquivo index.html no Explorer, clicamos
 Ao testarmos o jogo, observamos que o servidor local reconheceu e aplicou instantaneamente as modificações realizadas no código. A extensão Live Server injeta um código JavaScript no qual não precisamos nos aprofundar. Esse código é responsável por verificar e aplicar atualizações no projeto.
 
 Agora, ao modificar o número secreto e salvar o código, o Live Server atualiza automaticamente a aplicação no navegador, proporcionando um ambiente de desenvolvimento mais eficiente e ágil.
+
+## <a name="novascondicoes"> Novas condições </a>
+
+Nesta parte do curso, meu objetivo foi criar novas condições. 
+Agora, o jogo foi atualizado para incluir dicas quando a pessoa erra o palpite. A ideia é fornecer informações sobre se o número secreto é maior ou menor. Isso é implementado no arquivo app.js.
+
+Ao realizar um palpite incorreto, o código verifica se o número secreto é maior ou menor que o chute. Se o número secreto é maior, um alerta é exibido informando que o número secreto é maior que o chute. Se o número secreto é menor, um alerta é exibido informando que o número secreto é menor que o chute. O código executa essas verificações no contexto do bloco else, que é acionado quando o palpite não é correto.
+
+Para testar essa funcionalidade, o número secreto foi definido como 5. Ao fazer um palpite incorreto, como 7, o jogo exibe um alerta indicando que o número secreto é menor que 7. Se o próximo palpite for 4, o alerta informa que o número secreto é maior que 4. No entanto, o jogo ainda não está comportando-se da maneira desejada.
+
+O comportamento atual segue a lógica de execução do JavaScript, que processa o código linha por linha. Embora esteja executando conforme o código escrito, ainda precisamos ajustar para continuar jogando até acertarmos a resposta correta. Este será nosso próximo desafio a abordar.
 
 
 
