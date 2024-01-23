@@ -18,6 +18,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Novas condições](#novascondicoes)
 - [While e a estrutura de repetição](#whileeestruturaderepeticao)
 - [Tentativas](#tentativas)
+- [Break](#break)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -160,6 +161,20 @@ Dentro do loop while, no bloco else que trata os chutes errados, implementamos a
 Ao finalizar o jogo, quando o jogador acerta o número secreto, incluímos uma mensagem que informa não apenas que o número foi descoberto, mas também a quantidade de tentativas realizadas, utilizando a variável "tentativas" na mensagem.
 
 Testamos o jogo, onde a Mônica fez três tentativas (duas erradas e uma certa), e o sistema forneceu a contagem correta. O jogo agora está mais completo e interativo, dando feedback sobre o desempenho do jogador.
+
+## <a name="break"> Break </a>
+
+Nesta parte do curso, meu objetivo foi utilizar o comando break.
+
+Enfrentamos um problema no código do jogo, onde a mensagem exibida ao acertar na primeira tentativa não estava adequada. Decidimos criar uma validação para tratar esse caso específico.
+
+Inicialmente, pensamos em incluir uma condicional dentro do bloco if existente, mas percebemos que isso tornaria o código extenso e difícil de manter. Optamos pelo uso do comando "break" para interromper o loop while quando o jogador acertasse.
+
+No entanto, notamos que, ao inserir o "break", o código abaixo (a mensagem alert) era ignorado. Para corrigir isso, movemos a mensagem para fora do while, garantindo que fosse executada independentemente de como o loop terminasse.
+
+Ao realizar testes no navegador, notamos que a palavra "tentativas" na mensagem podia estar no singular ou plural, dependendo do número de tentativas. Para resolver isso, adicionamos uma condicional antes da mensagem, escolhendo entre "tentativa" e "tentativas" com base no valor da variável "tentativas". Realizamos testes para garantir a correção dessa funcionalidade.
+
+Dessa forma, ajustamos a mensagem exibida após o jogador acertar o número secreto na primeira tentativa, garantindo concordância correta com a quantidade de tentativas realizadas.
 
 
 
