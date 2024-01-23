@@ -14,6 +14,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Para saber mais: documentação](#parasabermaisdocumentacao)
 - [Else e comentários](#elseecomentarios)
 - [Concatenação](#concatenacao)
+- [Live server](#liveserver)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -107,6 +108,20 @@ Ao executar o jogo, notamos que, apesar da mudança, algumas partes do código a
 Decidimos utilizar Template Strings para combinar texto com valores de variáveis. Isso envolveu a substituição de aspas simples por crases (`) e a introdução do sinal de cifrão ($) antes da variável, colocada entre chaves {}. Essa abordagem permitiu que o texto exibisse dinamicamente o valor atual do número secreto definido no código.
 
 Dessa forma, conseguimos criar mensagens mais dinâmicas e interativas, adequando-se automaticamente ao valor do número secreto definido no início do código. Esse refinamento tornou nosso jogo mais flexível e facilitou futuras alterações no número secreto sem a necessidade de ajustes manuais adicionais.
+
+## <a name="liveserver"> Live server </a>
+
+Nesta parte do curso, meu objetivo foi instalar e configurar o Live Server. Quero garantir uma experiência de aprendizado eficiente, então compartilhei os passos necessários.
+
+Aprimoramos a dinâmica de exibição do número secreto em nosso jogo, mas enfrentamos um inconveniente: a necessidade de atualizar a página sempre que fazíamos alterações no código JavaScript. Esse processo não apenas era tedioso, mas também propenso a esquecimentos, levando-nos a pensar que as modificações não estavam funcionando.
+
+Para contornar esse problema, decidimos facilitar nossa vida com a ajuda de uma extensão chamada Live Server no Visual Studio Code. Extensões são recursos adicionais que incorporamos ao ambiente de desenvolvimento para simplificar tarefas específicas. Escolhemos o Live Server, que é uma extensão popular desenvolvida por Ritwick Dey.
+
+Após instalar o Live Server, abrimos o arquivo index.html no Explorer, clicamos com o botão direito e selecionamos "Open with Live Server". Isso iniciou um servidor local, eliminando a necessidade de atualização manual da página. O servidor automaticamente reflete qualquer alteração feita no código, proporcionando uma experiência de desenvolvimento mais fluida.
+
+Ao testarmos o jogo, observamos que o servidor local reconheceu e aplicou instantaneamente as modificações realizadas no código. A extensão Live Server injeta um código JavaScript no qual não precisamos nos aprofundar. Esse código é responsável por verificar e aplicar atualizações no projeto.
+
+Agora, ao modificar o número secreto e salvar o código, o Live Server atualiza automaticamente a aplicação no navegador, proporcionando um ambiente de desenvolvimento mais eficiente e ágil.
 
 
 
