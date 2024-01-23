@@ -21,6 +21,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Break](#break)
 - [Operador ternário](#operadorternario)
 - [Math random](#mathrandom)
+- [Número aleatório](#numeroaleatorio)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -198,13 +199,27 @@ Nesta parte do curso, meu objetivo foi utilizar o Math.random.
 
 No projeto atual, percebemos que o número secreto no jogo é fixo, tornando-o previsível e monótono. A proposta agora é incorporar aleatoriedade, garantindo que, a cada nova partida, um número diferente seja escolhido. Para isso, vamos utilizar a funcionalidade Math.random() do JavaScript.
 
-A função Math.random() gera um número pseudoaleatório no intervalo [0, 1[, ou seja, incluindo 0 e excluindo 1. Esse valor é obtido a partir de diversos fatores, como o relógio, mas não é verdadeiramente aleatório.
+A função Math.random() gera um número pseudoaleatório no intervalo [0, 1], ou seja, incluindo 0 e excluindo 1. Esse valor é obtido a partir de diversos fatores, como o relógio, mas não é verdadeiramente aleatório.
 
 Para ajustar o intervalo e obter números entre 0 e 10, multiplicamos Math.random() por 10. No entanto, para evitar casas decimais, utilizamos a função parseInt() para obter apenas a parte inteira.
 
 Se desejamos números de 1 a 10, somamos 1 ao resultado anterior, pois parseInt(Math.random() * 10) gera valores entre 0 e 9. A expressão final fica como parseInt(Math.random() * 10 + 1).
 
 O próximo passo é incorporar esse código ao projeto, gerando um número aleatório entre 1 e 10 para o jogador adivinhar. Consideramos a possibilidade de aumentar a dificuldade posteriormente, optando por um intervalo de 1 a 100. O aprendizado envolve explorar a documentação, entender os comandos e aplicá-los no desenvolvimento do jogo.
+
+## <a name="numeroaleatorio"> Número aleatório </a>
+
+Após revisar a documentação e compreender como gerar números aleatórios, chegou o momento de aplicar esse conhecimento ao nosso código. Na linha 2, onde declaramos a variável numeroSecreto, utilizamos a função Math.random() para gerar um número entre 0 e 1 (excluindo 1), multiplicamos por 10 para obter valores de 0 a 9 com casas decimais, e, em seguida, utilizamos parseInt() para obter apenas a parte inteira. Para garantir um número entre 1 e 10, acrescentamos 1 ao resultado.
+
+<code>let numeroSecreto = parseInt(Math.random() * 10 + 1);</code>
+
+Ao testar o jogo, confirmamos que o número secreto é gerado corretamente.
+
+Para aumentar o desafio, decidimos ampliar o intervalo para números entre 1 e 100. Para isso, ajustamos a linha mencionada para multiplicar por 100 e alteramos a mensagem do prompt() na linha 9 para refletir a nova faixa.
+
+<code>let numeroSecreto = parseInt(Math.random() * 100 + 1);</code>
+
+Realizamos testes adicionais no jogo, agora com números entre 1 e 100, e conseguimos identificar corretamente o número secreto após algumas tentativas. Essa ampliação do intervalo torna o jogo mais desafiador.
 
 
 
