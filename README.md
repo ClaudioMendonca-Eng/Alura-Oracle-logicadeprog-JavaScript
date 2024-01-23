@@ -16,6 +16,8 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Concatenação](#concatenacao)
 - [Live server](#liveserver)
 - [Novas condições](#novascondicoes)
+- [While e a estrutura de repetição](#whileeestruturaderepeticao)
+- [Tentativas](#tentativas)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -134,6 +136,32 @@ Ao realizar um palpite incorreto, o código verifica se o número secreto é mai
 Para testar essa funcionalidade, o número secreto foi definido como 5. Ao fazer um palpite incorreto, como 7, o jogo exibe um alerta indicando que o número secreto é menor que 7. Se o próximo palpite for 4, o alerta informa que o número secreto é maior que 4. No entanto, o jogo ainda não está comportando-se da maneira desejada.
 
 O comportamento atual segue a lógica de execução do JavaScript, que processa o código linha por linha. Embora esteja executando conforme o código escrito, ainda precisamos ajustar para continuar jogando até acertarmos a resposta correta. Este será nosso próximo desafio a abordar.
+
+## <a name="whileeestruturaderepeticao"> While e a estrutura de repetição </a>
+
+Nesta parte do curso, meu objetivo foi criar uma estrutura de repetição.
+
+Atualizamos o jogo para permitir várias tentativas até que o jogador acerte o número secreto. Introduzimos o conceito de loop, especificamente a estrutura while na programação, para executar um conjunto de instruções enquanto uma condição permanece verdadeira.
+
+No código (arquivo app.js), utilizamos um loop while para manter o jogo em execução enquanto o chute do jogador não for igual ao número secreto. Dentro do loop, solicitamos repetidamente que o jogador faça um novo chute usando a função prompt.
+
+Para evitar um loop infinito, movemos as verificações condicionais (if) para dentro do loop while. Agora, o código verifica se o chute é igual ao número secreto dentro do loop. Se for, o jogo termina com uma mensagem de acerto. Se não, o código informa se o número secreto é maior ou menor que o chute e continua solicitando novos chutes até que o jogador acerte.
+
+Testamos o jogo com diferentes chutes, observando as mensagens de feedback e verificando se o jogo se comporta como esperado. Este ajuste torna o jogo mais interativo, permitindo ao jogador aprimorar seus palpites até descobrir o número secreto.
+
+## <a name="tentativas"> Tentativas </a>
+
+Nesta parte do curso, meu objetivo foi criar uma variável para contar as tentativas.
+
+Adicionamos uma funcionalidade ao jogo para contabilizar quantas tentativas são necessárias para o jogador acertar o número secreto. Começamos criando uma variável chamada "tentativas" e a inicializamos com o valor 1, indicando que a primeira tentativa já ocorreu.
+
+Dentro do loop while, no bloco else que trata os chutes errados, implementamos a contagem de tentativas. Inicialmente, usamos a expressão "tentativas = tentativas + 1;", mas posteriormente otimizamos para "tentativas++;", uma forma mais concisa e comum de incrementar o valor de uma variável em 1.
+
+Ao finalizar o jogo, quando o jogador acerta o número secreto, incluímos uma mensagem que informa não apenas que o número foi descoberto, mas também a quantidade de tentativas realizadas, utilizando a variável "tentativas" na mensagem.
+
+Testamos o jogo, onde a Mônica fez três tentativas (duas erradas e uma certa), e o sistema forneceu a contagem correta. O jogo agora está mais completo e interativo, dando feedback sobre o desempenho do jogador.
+
+
 
 
 
