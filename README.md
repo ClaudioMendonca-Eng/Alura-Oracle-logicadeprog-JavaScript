@@ -19,6 +19,8 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [While e a estrutura de repetição](#whileeestruturaderepeticao)
 - [Tentativas](#tentativas)
 - [Break](#break)
+- [Operador ternário](#operadorternario)
+- [Math random](#mathrandom)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -175,6 +177,36 @@ No entanto, notamos que, ao inserir o "break", o código abaixo (a mensagem aler
 Ao realizar testes no navegador, notamos que a palavra "tentativas" na mensagem podia estar no singular ou plural, dependendo do número de tentativas. Para resolver isso, adicionamos uma condicional antes da mensagem, escolhendo entre "tentativa" e "tentativas" com base no valor da variável "tentativas". Realizamos testes para garantir a correção dessa funcionalidade.
 
 Dessa forma, ajustamos a mensagem exibida após o jogador acertar o número secreto na primeira tentativa, garantindo concordância correta com a quantidade de tentativas realizadas.
+
+## <a name="operadorternario"> Operador ternário </a>
+
+Nesta parte do curso, meu objetivo foi utilizar o operador ternário.
+
+No código do jogo, percebemos que havia repetição de blocos "if" para lidar com a questão de singular ou plural na palavra "tentativas". Buscando simplificar, introduzimos uma técnica chamada operador ternário, comum em várias linguagens de programação, incluindo JavaScript.
+
+Criamos uma variável chamada "palavraTentativa", onde utilizamos o operador ternário para verificar se o número de tentativas é maior que um. Dependendo do resultado, atribuímos a string 'tentativas' (plural) ou 'tentativa' (singular) à variável.
+
+Em seguida, substituímos o bloco "if...else" anterior pelo uso dessa variável no momento de exibir a mensagem de alerta. Agora, o código é mais conciso e mantém o mesmo comportamento.
+
+Essa prática é comum no desenvolvimento, e o operador ternário proporciona uma leitura mais clara e eficiente, especialmente quando se lida com pequenas condicionais.
+
+Realizamos testes no jogo do número secreto, garantindo que as mensagens de acerto estejam corretas para uma ou mais de uma tentativa. Essa abordagem, embora diferente da anterior, demonstra uma maneira alternativa de lidar com estruturas condicionais, sendo útil para ampliar a compreensão de diferentes estilos de codificação.
+
+## <a name="mathrandom"> Math random </a>
+
+Nesta parte do curso, meu objetivo foi utilizar o Math.random.
+
+No projeto atual, percebemos que o número secreto no jogo é fixo, tornando-o previsível e monótono. A proposta agora é incorporar aleatoriedade, garantindo que, a cada nova partida, um número diferente seja escolhido. Para isso, vamos utilizar a funcionalidade Math.random() do JavaScript.
+
+A função Math.random() gera um número pseudoaleatório no intervalo [0, 1[, ou seja, incluindo 0 e excluindo 1. Esse valor é obtido a partir de diversos fatores, como o relógio, mas não é verdadeiramente aleatório.
+
+Para ajustar o intervalo e obter números entre 0 e 10, multiplicamos Math.random() por 10. No entanto, para evitar casas decimais, utilizamos a função parseInt() para obter apenas a parte inteira.
+
+Se desejamos números de 1 a 10, somamos 1 ao resultado anterior, pois parseInt(Math.random() * 10) gera valores entre 0 e 9. A expressão final fica como parseInt(Math.random() * 10 + 1).
+
+O próximo passo é incorporar esse código ao projeto, gerando um número aleatório entre 1 e 10 para o jogador adivinhar. Consideramos a possibilidade de aumentar a dificuldade posteriormente, optando por um intervalo de 1 a 100. O aprendizado envolve explorar a documentação, entender os comandos e aplicá-los no desenvolvimento do jogo.
+
+
 
 
 
