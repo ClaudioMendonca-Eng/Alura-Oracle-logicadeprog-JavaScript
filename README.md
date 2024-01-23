@@ -3,6 +3,8 @@
 
 Atualmente, estou participando ativamente do programa ONE Oracle Next Education T6, uma colaboração entre a Oracle e a Alura. Estou genuinamente desfrutando da experiência educacional oferecida por este curso, que está focado no aprendizado de Lógica de Programação e na exploração dos fundamentos da programação com JavaScript.
 
+![](img/imagemgamer.png.png)
+
 ## Índice
 
 - [Instrutores](#instrutor)
@@ -23,6 +25,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Math random](#mathrandom)
 - [Número aleatório](#numeroaleatorio)
 - [Apresentação do desafio](#apresentacaododesafio)
+- [Conclusão](#conclusao)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -238,6 +241,17 @@ Para comunicar à pessoa usuária sobre o novo intervalo, na linha 10, usamos te
 
 Testamos as alterações no navegador, onde a mensagem de boas-vindas agora indica que o jogador deve escolher um número entre 1 e 5000. As modificações são efetivas, e o jogo agora permite ajustar o valor máximo ao modificar a variável numeroMaximo na linha 2 do código. O desafio foi concluído, envolvendo conceitos de variáveis, template strings e expressões matemáticas.
 
+## <a name="conclusao"> Conclusão </a>
+
+Neste curso, aprendemos os fundamentos da programação com JavaScript, explorando conceitos essenciais como variáveis, condicionais, loops e funções. Também desenvolvemos um jogo do número secreto, aplicando os conceitos aprendidos e aprimorando o jogo com novas funcionalidades.
+
+Agora, você pode continuar aprimorando o jogo, adicionando novas funcionalidades e melhorando a experiência do usuário. Além disso, pode explorar outros cursos da Alura para aprofundar seus conhecimentos em JavaScript e outras linguagens de programação.
+
+## <a name="licença"> Licença </a>
+
+<a href="https://www.buymeacoffee.com/claudiomendonca" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+Copyright © 2022 <a href="https://www.claudiomendonca.eng.br" target="_blank">ClaudioMendonca.eng.br</a> . The [MIT License]() (MIT)
 
 
 
