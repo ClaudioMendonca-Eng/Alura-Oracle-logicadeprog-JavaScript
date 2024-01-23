@@ -10,6 +10,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Arquivo base para o curso](#arquivobaseparacurso)
 - [Jogo do Número Secreto](#jogodonumerosecreto)
 - [Exibindo mensagens na tela](#exibindomensagensnatela)
+- [Comparando variáveis](#comparandovariaveis)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -56,6 +57,22 @@ Atribuí o valor 29 à variável "numeroSecreto" e utilizei o comando "prompt" p
 Ao testar no navegador, observei que a mensagem de boas-vindas e a solicitação para escolher um número foram exibidas corretamente. No entanto, ao errar a resposta propositalmente, identifiquei um bug: a mensagem de acerto ainda era exibida.
 
 Para corrigir isso, alterei o número secreto para 5 e o intervalo para 1 a 10. Testei novamente, detectando o bug na mensagem de acerto após um chute incorreto. Essa fase de testes é crucial para garantir o funcionamento adequado do jogo.
+
+## <a name="comparandovariaveis"> Comparando variáveis </a>
+
+Estávamos revisando o código do jogo e percebemos que a comparação entre os valores inseridos no prompt e o número secreto não estava sendo feita corretamente. Ao testar com o número 4, ainda assim ganhávamos o jogo, o que não deveria ocorrer.
+
+Decidimos corrigir esse problema, introduzindo o conceito de condicional em JavaScript. Utilizamos a instrução "if" para comparar o valor do chute com o número secreto. Antes do prompt, criamos uma variável chamada "chute" para armazenar o valor digitado.
+
+Ao usar o "if", verificamos se o valor do chute é igual ao número secreto. Se essa condição for verdadeira, exibimos uma mensagem no console usando "console.log()". Esse comando nos permite visualizar mensagens no ambiente de desenvolvimento.
+
+Salvamos o código e testamos no navegador. Ao inserir o número 5, que é o número secreto definido, a mensagem "Você acertou!" apareceu no console. No entanto, notamos que essa mensagem era exibida mesmo quando errávamos.
+
+Explorando o console do navegador, identificamos a mensagem "Isso aí! Você descobriu o número secreto (5)". Reconhecemos que essa mensagem era visível apenas no console e não na tela.
+
+Decidimos corrigir isso, ajustando o código para exibir mensagens na tela, além do console. Preparamos o código para incluir mensagens visíveis na tela para acertos e erros, permitindo uma experiência mais interativa para a pessoa jogando o game.
+
+
 
 
 
