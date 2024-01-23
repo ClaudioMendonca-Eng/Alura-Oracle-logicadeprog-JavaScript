@@ -22,6 +22,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Operador ternário](#operadorternario)
 - [Math random](#mathrandom)
 - [Número aleatório](#numeroaleatorio)
+- [Apresentação do desafio](#apresentacaododesafio)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -220,6 +221,23 @@ Para aumentar o desafio, decidimos ampliar o intervalo para números entre 1 e 1
 <code>let numeroSecreto = parseInt(Math.random() * 100 + 1);</code>
 
 Realizamos testes adicionais no jogo, agora com números entre 1 e 100, e conseguimos identificar corretamente o número secreto após algumas tentativas. Essa ampliação do intervalo torna o jogo mais desafiador.
+
+## <a name="apresentacaododesafio"> Apresentação do desafio final </a>
+
+Agora, o desafio é tornar o jogo mais dinâmico, permitindo alterar o intervalo máximo do número secreto em apenas um local do código. Ao invés de fixar o número máximo em 100, criamos uma variável chamada numeroMaximo e a inicializamos com um valor (por exemplo, 5000) para teste.
+
+<code>let numeroMaximo = 100;</code>
+
+Em seguida, realizamos substituições relevantes no código. Na linha 3, onde é gerado o número secreto, trocamos o valor fixo (100) pela variável numeroMaximo.
+
+<code>let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);</code>
+
+Para comunicar à pessoa usuária sobre o novo intervalo, na linha 10, usamos template strings, removendo as aspas e adicionando crases. Dentro da expressão ${}, inserimos a variável numeroMaximo.
+
+<code>let chute = parseInt(prompt(`Digite um número entre 0 e ${numeroMaximo}`));</code>
+
+Testamos as alterações no navegador, onde a mensagem de boas-vindas agora indica que o jogador deve escolher um número entre 1 e 5000. As modificações são efetivas, e o jogo agora permite ajustar o valor máximo ao modificar a variável numeroMaximo na linha 2 do código. O desafio foi concluído, envolvendo conceitos de variáveis, template strings e expressões matemáticas.
+
 
 
 
