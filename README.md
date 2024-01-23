@@ -11,6 +11,9 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Jogo do Número Secreto](#jogodonumerosecreto)
 - [Exibindo mensagens na tela](#exibindomensagensnatela)
 - [Comparando variáveis](#comparandovariaveis)
+- [Para saber mais: documentação](#parasabermaisdocumentacao)
+- [Else e comentários](#elseecomentarios)
+- [Concatenação](#concatenacao)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -71,6 +74,43 @@ Salvamos o código e testamos no navegador. Ao inserir o número 5, que é o nú
 Explorando o console do navegador, identificamos a mensagem "Isso aí! Você descobriu o número secreto (5)". Reconhecemos que essa mensagem era visível apenas no console e não na tela.
 
 Decidimos corrigir isso, ajustando o código para exibir mensagens na tela, além do console. Preparamos o código para incluir mensagens visíveis na tela para acertos e erros, permitindo uma experiência mais interativa para a pessoa jogando o game.
+
+## <a name="parasabermaisdocumentacao"> Para saber mais: documentação </a>
+
+A leitura da documentação oficial de uma linguagem de programação, como o JavaScript, é essencial para que um desenvolvedor possa usar a linguagem de maneira eficaz. A documentação oferece informações abrangentes sobre a sintaxe, bibliotecas e funcionalidades disponíveis na linguagem.
+
+Alguns links úteis para a documentação oficial do JavaScript incluem:
+
+- [A documentação da linguagem de programação JavaScript](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+- [Guia de JavaScript: o que é e como aprender a linguagem mais popular do mundo?](https://cursos.alura.com.br/course/logica-programacao-mergulhe-programacao-javascript/task/137041#:~:text=Alguns%20links%20%C3%BAteis,popular%20do%20mundo%3F)
+
+Explorar links úteis, como a documentação da linguagem de programação JavaScript e guias específicos sobre o JavaScript, proporciona uma compreensão mais profunda da linguagem. Isso facilita a criação de códigos mais limpos, claros e seguros. Além disso, a documentação ajuda a economizar tempo, evitando a necessidade de pesquisar em fóruns ou fontes de informação menos confiáveis.
+
+## <a name="elseecomentarios"> ELSE e comentários </a>
+
+O próximo desafio é criar uma condição para exibir uma mensagem indicando se a pessoa acertou ou errou. No JavaScript, podemos usar o comando if para criar condições. Para comentários no código, utilizamos o sinal de barra dupla // claro que pesquisei mais depois sobre isso kkk.
+
+Ao escrever if, seguido de uma condição entre parênteses, estamos instruindo o programa a executar um bloco de código somente se essa condição for verdadeira. Utilizamos else para criar um bloco de código a ser executado se a condição do if não for atendida.
+
+Ao testar a aplicação, podemos visualizar mensagens diferentes no console ou utilizando alert para interagir com o usuário. Também aprendemos a utilizar console.log() para exibir informações no console, sendo útil para depuração.
+
+É importante notar que o código é executado linha por linha, e a ordem das instruções pode afetar o resultado. Além disso, evitamos usar aspas simples quando nos referimos a variáveis para que o JavaScript entenda que se trata do valor da variável, não um texto.
+
+O próximo passo seria dar esperança à pessoa usuária, mesmo que ela erre, incentivando-a a continuar tentando acertar o número secreto.
+
+## <a name="concatenacao"> Concatenação </a>
+
+No desenvolvimento do nosso jogo do número secreto, enfrentamos um desafio interessante. Inicialmente, testamos as trilhas de sucesso e insucesso, percebendo que o número secreto era fixo em 5. Para tornar a experiência mais empolgante, decidimos mudar o número secreto para 4, a escolha da Mônica.
+
+Ao executar o jogo, notamos que, apesar da mudança, algumas partes do código ainda faziam referência manual ao número 5, exigindo alterações manuais. Isso levantou a questão de como tornar o código mais flexível, evitando acoplamentos rígidos.
+
+Decidimos utilizar Template Strings para combinar texto com valores de variáveis. Isso envolveu a substituição de aspas simples por crases (`) e a introdução do sinal de cifrão ($) antes da variável, colocada entre chaves {}. Essa abordagem permitiu que o texto exibisse dinamicamente o valor atual do número secreto definido no código.
+
+Dessa forma, conseguimos criar mensagens mais dinâmicas e interativas, adequando-se automaticamente ao valor do número secreto definido no início do código. Esse refinamento tornou nosso jogo mais flexível e facilitou futuras alterações no número secreto sem a necessidade de ajustes manuais adicionais.
+
+
+
+
 
 
 
