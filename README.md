@@ -27,6 +27,7 @@ Atualmente, estou participando ativamente do programa ONE Oracle Next Education 
 - [Número aleatório](#numeroaleatorio)
 - [Apresentação do desafio](#apresentacaododesafio)
 - [Conclusão](#conclusao)
+- [Certificado](#certificado)
 - [Licença](#licença)
 
 ## <a name="instrutor"> Instrutores </a>
@@ -247,6 +248,16 @@ Testamos as alterações no navegador, onde a mensagem de boas-vindas agora indi
 Neste curso, aprendemos os fundamentos da programação com JavaScript, explorando conceitos essenciais como variáveis, condicionais, loops e funções. Também desenvolvemos um jogo do número secreto, aplicando os conceitos aprendidos e aprimorando o jogo com novas funcionalidades.
 
 Agora, você pode continuar aprimorando o jogo, adicionando novas funcionalidades e melhorando a experiência do usuário. Além disso, pode explorar outros cursos da Alura para aprofundar seus conhecimentos em JavaScript e outras linguagens de programação.
+
+## <a name="certificado"> Certificado </a>
+
+## Lógica de programação: mergulhe em programação com JavaScript
+
+Parabéns! Você acabou de avançar mais um passo e mergulhou profundamente em conhecimento com a gente.
+
+![](img/certificado01.png)
+
+![](img/certificado02.png)
 
 ## <a name="licença"> Licença </a>
 
